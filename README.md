@@ -13,7 +13,7 @@
 
 *** 
 
-After the script runs, use the newly generated python dictionary of dataframes `dfs.` 
+After the script runs, use the newly generated python dictionary of dataframes `dfs`.
 
 By using the key of the table data desired, create a dataframe as in the following example.
 
