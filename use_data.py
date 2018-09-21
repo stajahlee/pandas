@@ -1,9 +1,5 @@
 from create_dataframes import get_dataframes
+import user_choices as user
 
-for idx, df in enumerate(get_dataframes()):
-  # we now have all of the tables in the database contained in a list of pandas dataframes
-  # we can iterate through this list and do whatever needs to be done with the data in 
-  # all of the dataframes
-  
-  print ('Dataframe ' + str(idx) + ':')
-  print (df.head(1))
+dfs = get_dataframes()
+print ('You now have a dictionary of dataframes called dfs with the following keys:\n' + str(dfs.keys()))
