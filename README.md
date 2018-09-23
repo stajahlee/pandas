@@ -7,7 +7,7 @@ _This repo is currently in version 'practice for stajah'_
 
 * The driver script for this repo is `use_data.py` which is run concurrently with a locally hosted postgresql database.
 
-* The data for the database is `data/dvdrental.tar` and pgAdmin 4 hosts this for the python script to connect.
+* The data for the database is contained here in the repo at `data/dvdrental.tar` and pgAdmin 4 hosts this for the python script to connect.
 
 * Once the database is hosted at `localhost:5432`, the `use_data.py` script can be run with `python use_data.py` however in order to use the resulting dataframe, run this from within Anaconda Prompt > `ipython` using the command `%run ./use_data.py` 
 
@@ -41,3 +41,5 @@ Out[3]:
 3            4  Mandarin             2006-02-15 10:02:19
 4            5  French               2006-02-15 10:02:19
 ~~~
+
+see this [postgresql tutorial](http://www.postgresqltutorial.com/postgresql-sample-database/) for more details about the schema and also to see where I downloaded the database.
