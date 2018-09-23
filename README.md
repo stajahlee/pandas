@@ -3,6 +3,8 @@
 🐼🐼🐼
 ## Utilizing the pandas library for data analysis
 
+_This repo is currently in version 'practice for stajah'_
+
 * The driver script for this repo is `use_data.py` which is run concurrently with a locally hosted postgresql database.
 
 * The data for the database is `data/dvdrental.tar` and pgAdmin 4 hosts this for the python script to connect.
