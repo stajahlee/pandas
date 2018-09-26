@@ -5,9 +5,11 @@
 
 _This repo is currently in version 'practice for stajah'_
 
+### PostgreSQL version
+
 * The driver script for this repo is `use_data.py` which is run concurrently with a locally hosted postgresql database.
 
-* The data for the database is contained here in the repo at `data/dvdrental.tar` and pgAdmin 4 hosts this for the python script to connect.
+* A copy of the data for the database is contained in the repo at `data/dvdrental.tar` and pgAdmin 4 hosts this for the python script to connect.
 
 * Once the database is hosted at `localhost:5432`, the `use_data.py` script can be run with `python use_data.py`.
 
@@ -15,13 +17,9 @@ _This repo is currently in version 'practice for stajah'_
 
 ***
 
-After the script runs, use the newly generated python dictionary of dataframes `dfs`.
+After the program begins, and you have connected to the database by entering the username and password, it will require you to input a regex pattern to search the database, then output those results to a new file titled `results.csv`.
 
 _If further analysis should be done on the data, the dataframe `results` can be used directly in the IPython REPL, along with the `dfs` dictionary of all dataframes from the database, as can be seen in the following example._ 
-
-***
-
-### Here is an example of running the program with python, as well as interaction with IPython REPL
 
 ~~~
 (base) C:\Users\stajah.hoeflich\python_projects\pandas>python postgresql/use_data.py
@@ -84,7 +82,6 @@ Out[5]:
 3        4                Acua          60 2006-02-15 09:45:25
 4        5               Adana          97 2006-02-15 09:45:25
 
-In [6]:
 ~~~
 
 See this [postgresql tutorial](http://www.postgresqltutorial.com/postgresql-sample-database/) for more details about the schema and also to see where I downloaded the database.
@@ -148,7 +145,6 @@ Out[3]:
 
 [5 rows x 10 columns]
 
-In [4]:
 ~~~
 
-see this [postgresql tutorial](http://www.postgresqltutorial.com/postgresql-sample-database/) for more details about the schema and also to see where I downloaded the database.
+_Again, this repo is for learning purposes only and is no way meant to guide anyone to Pandas mastership._
